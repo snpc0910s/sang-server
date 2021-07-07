@@ -1,0 +1,28 @@
+request sell stock
+method: post
+http://localhost:8080/api/stock/sell-stock
+
+{
+	"idUser": 1,
+	"idStock": 1,
+	"nameStock": "FPT",
+	"numberOfStock": 100,
+	"priceOfStock": 12000
+}
+
+to:  http://localhost:8081/fpt/sell
+
+
+request buy stock
+method: post
+http://localhost:8080/api/stock/buy-stock
+
+{
+	"idUser": 1,
+	"idStock": 1,
+	"nameStock": "FPT",
+	"numberOfStock": 500,
+	"priceOfStock": 10000
+}
+
+to: http://localhost:8082/vnpt/sell
